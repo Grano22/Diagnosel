@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Diagnosel.exe" version="1.0.0.1" publicKeyToken="aeee878e4830d433" language="neutral" processorArchitecture="amd64" type="win32" />
+  <description asmv2:iconFile="diagnoselicon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Diagnosel" version="0.1.0.0" language="neutral" processorArchitecture="amd64" />
+    <commandLine file="Diagnosel.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opcje manifestu UAC
+          Jeśli chcesz zmienić poziom kontroli kont użytkowników w systemie Windows, zastąp węzeł 
+          requestedExecutionLevel jednym z następujących.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Jeśli w celu zapewnienia wstecznej zgodności chcesz użyć wirtualizacji plików i rejestru, 
+         usuń węzeł requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Diagnosel.exe" size="2344384">
+      <assemblyIdentity name="Diagnosel" version="0.1.0.0" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>VbIHoRbccTUAA60kbEcLYkH5xfjqoAyTtmJIpuBri70=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FontAwesome.WPF.dll" size="209408">
+      <assemblyIdentity name="FontAwesome.WPF" version="4.7.0.37774" publicKeyToken="0758B07A11A4F466" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Y9UNvglLvOXXv4rwjA2RnPpeBXygWueydwSoR3yLNI8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Diagnosel.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="diagnoselicon.ico" size="28214">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ca4eEZS8L+QmVlQWAb9OeWlFu040JjpxjhulNx8+ZEY=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=adrian-pc\adrian" issuerKeyHash="cf45cb97493af66d95ad7a19ea66d43b7378b5fd" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>+GmESfGflQb+gY4WCFx8x2zvOJRYE0/yZVwws24kbTU=</DigestValue></Reference></SignedInfo><SignatureValue>jnude0IJ+VwcdBCv2KOjSSJD5dMi3Om5oVm/0EnIb6A8QYY7nF+7UikGqPaPh6QKVTHxJbDmZ7PHbIw83Gu/JBP7jkkThQ7cQuKEYl4QbPsboehaxJI9dPnxXz6w2mdfG2RKPnw9RJbomf3fmJ5yt9rpyRfJh6g1+k4fBdtD2uo=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>pXKFE426LLNJBDMw6vcfe/iboljISOv6xXGOrbiFGV2pGDtE1Bq7eJVSWdG6B0UrGNUTpsVjIdLzs00IDK7vfAILo9HiVzEEgB3Hom0DQYOUikCGxrTi/Umaxc2n0hSG4Q0SHWWOSfCQW9wURO8gnqGa1ezBoUga1IIFi1Ri8k0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="356d246eb3305c65f24f13589438ef6cc77c5c08168e81fe06959ff1498469f8" Description="" Url=""><as:assemblyIdentity name="Diagnosel.exe" version="1.0.0.1" publicKeyToken="aeee878e4830d433" language="neutral" processorArchitecture="amd64" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=adrian-pc\adrian</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>2ZaxUmVsno4XkXvx/N+19uMyy4oiMvdmCO3b6h6RJDk=</DigestValue></Reference></SignedInfo><SignatureValue>QtsrSRd2tt9kSMTjsVyyUt8GUVagb1rr5p642AL7QuVFEO3FRGu7SDyAuqMtZpYDItoAvkhgTOREap29AOfdgLJZAX7WzmD//lxWxckNx8uRtvgA7OCjuC2P34dKCj0jVdneuSK6tQsyOc5f5Qj3oUPpzDpgjgfq0jNiGDpvIf8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pXKFE426LLNJBDMw6vcfe/iboljISOv6xXGOrbiFGV2pGDtE1Bq7eJVSWdG6B0UrGNUTpsVjIdLzs00IDK7vfAILo9HiVzEEgB3Hom0DQYOUikCGxrTi/Umaxc2n0hSG4Q0SHWWOSfCQW9wURO8gnqGa1ezBoUga1IIFi1Ri8k0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQOZyLLlCm7IlEfqyojo0KaTANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDHiAAYQBkAHIAaQBhAG4ALQBwAGMAXABhAGQAcgBpAGEAbjAeFw0yMDA0MjEwMDU2MjhaFw0yMTA0MjEwNjU2MjhaMCsxKTAnBgNVBAMeIABhAGQAcgBpAGEAbgAtAHAAYwBcAGEAZAByAGkAYQBuMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQClcoUTjboss0kEMzDq9x97+JuiWMhI6/rFcY6tuIUZXakYO0TUGrt4lVJZ0boHRSsY1ROmxWMh0vOzTQgMru98Aguj0eJXMQSAHceibQNBg5SKQIbGtOL9SZrFzafSFIbhDRIdZY5J8JBb3BRE7yCeoZrV7MGhSBrUggWLVGLyTQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAI5SNbdDq4wblKjNhW1FYQiZDloXQ/FUmRVQmdeiiar+VW/bMldAmGzDY9iRLVG4YgCLas/O+arOumjQV7i6O1QvCxMVaAs5Ufc9Rr1JizmAQmoCOfZ+swCcj5LPblH4qwgHvFaBDVBUgiQvkuIZtvjFqvL+YcC/kIuCDJjv/j/E</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
